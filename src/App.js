@@ -8,8 +8,11 @@ import {
   Flex,
   Image,
   Link,
+  Icon,
 } from '@chakra-ui/react';
 import './App.css';
+import { RiShareForwardLine } from 'react-icons/ri';
+import { AiOutlineEllipsis } from 'react-icons/ai';
 
 function App() {
   const [user] = useState({
@@ -31,11 +34,11 @@ function App() {
       name: `Zuri Books`,
       link: 'https://books.zuri.team',
       id: `books`,
-      title: 'My Zuri Books for Designers and Programmers',
+      title: 'Zuri Books!... My one stop shop for Designers and Programmers',
     },
     {
       name: `Python Books`,
-      link: `https://books.zuri.team/python-for-beginners?ref_id=KingsleySolomon`,
+      link: `https://books.zuri.team/python-for-beginners?ref_id=Bug`,
       id: `book__python`,
       title:
         'The only Python Book you will ever need! save up to a wooping $10.00 !',
@@ -72,27 +75,68 @@ function App() {
   });
 
   return (
-    <Center display={`flex`} flexDir={`column`} p="10" className="cc-container">
+    <Center
+      pos={`relative`}
+      display={`flex`}
+      flexDir={`column`}
+      p="10"
+      className="cc-container"
+    >
       <Center flexDir={`column`}>
+        <Icon
+          display={{ md: `none` }}
+          cursor={`pointer`}
+          border={`1px dotted grey`}
+          p={2}
+          color={`grey`}
+          borderRadius={`100%`}
+          position={`absolute`}
+          top={{ base: `3rem` }}
+          right={{ base: `2.5rem`, md: `15rem` }}
+          boxSize={`3em`}
+          as={AiOutlineEllipsis}
+        />
+        <Icon
+          display={{ base: `none`, md: `initial` }}
+          cursor={`pointer`}
+          border={`1px dotted grey`}
+          p={2}
+          color={`grey`}
+          borderRadius={`100%`}
+          position={`absolute`}
+          top={{ base: `3rem` }}
+          right={{ base: `2.5rem`, md: `15rem` }}
+          boxSize={`2em`}
+          as={RiShareForwardLine}
+        />
         <Avatar id="profile__img" size="2xl" name={user.name} src={user.img} />
         <Text fontSize={`20px`} mt="24px" fontWeight="700">
           {user.name}
+        </Text>
+        <Text id="slack" hidden color={`red`} fontWeight={`500`}>
+          @Bug
         </Text>
       </Center>
       <Box mt="56px" w={`1oo%`}>
         {ButtonLinks}
       </Box>
       <Flex my="5" gap={5}>
-        <Image
-          id="slack"
-          src="https://img.icons8.com/color/24/000000/slack-new.png"
-          alt="slack"
-        />
-        <Image
-          id="github"
-          src="https://img.icons8.com/material-sharp/24/000000/github.png"
-          alt="github"
-        />
+        <Link href="hng9.slack.com" isExternal>
+          <Image
+            title="@Bug"
+            id="slack"
+            src="https://img.icons8.com/color/24/000000/slack-new.png"
+            alt="slack"
+          />
+        </Link>
+        <Link href="https://github.com/kinxlo" isExternal>
+          <Image
+            title="@Kinxlo"
+            id="github"
+            src="https://img.icons8.com/material-sharp/24/000000/github.png"
+            alt="github"
+          />
+        </Link>
       </Flex>
       <Box mt="10rem" w="100%" borderTop={`1px solid lightgrey`} py="10">
         <Flex
