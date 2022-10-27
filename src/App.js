@@ -37,16 +37,21 @@ function App() {
       name: `Python Books`,
       link: `https://books.zuri.team/python-for-beginners?ref_id=KingsleySolomon`,
       id: `book__python`,
+      title:
+        'The only Python Book you will ever need! save up to a wooping $10.00 !',
     },
     {
       name: `Background Check for Coders`,
-      link: 'https://background.zuri.team',
+      link: 'https://backgroundcheck.zuri.team',
       id: `pitch`,
+      title:
+        'Learn about your Devs, you know what they do, \n now you can know who they are. \n Allow us to assist you in making more informed hiring selections.',
     },
     {
       name: `Design Books`,
       link: 'https://books.zuri.team/design-rules',
       id: `book__design`,
+      title: 'Start your design Journey with Zuri Design books...FREE!',
     },
   ]);
 
@@ -69,7 +74,7 @@ function App() {
   return (
     <Center display={`flex`} flexDir={`column`} p="10" className="cc-container">
       <Center flexDir={`column`}>
-        <Avatar id="profile_img" size="2xl" name={user.name} src={user.img} />
+        <Avatar id="profile__img" size="2xl" name={user.name} src={user.img} />
         <Text fontSize={`20px`} mt="24px" fontWeight="700">
           {user.name}
         </Text>
