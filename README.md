@@ -19,11 +19,11 @@ showing the profile of a user and links to digital assets said user sells online
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
 
-### Prerequisites
+### Prerequisites <a name = "prerequisites"></a>
 
 [Node v16 or higher](https://nodejs.org/en/)
 
-### Installing
+### Installing <a name = "installing"></a>
 
 In order to run this project on your local machine or system, you will need to clone the source code by doing
 
