@@ -10,11 +10,12 @@ import {
   Link,
   Icon,
 } from '@chakra-ui/react';
-import './App.css';
+// import './index.css';
 import { RiShareForwardLine } from 'react-icons/ri';
 import { AiOutlineEllipsis } from 'react-icons/ai';
+import { Link as RRouterLink } from 'react-router-dom';
 
-function App() {
+function Index() {
   const [user] = useState({
     name: 'Kingsley Solomon',
     img: 'https://res.cloudinary.com/kingsleysolomon/image/upload/v1630322773/hng/profile1_wqaris.jpg',
@@ -24,11 +25,13 @@ function App() {
       name: `@Kinxlo`,
       link: 'https://twitter.com/kinxlo',
       id: `twitter`,
+      isExternal: true,
     },
     {
       name: `Zuri Team`,
       link: 'https://training.zuri.team/',
       id: `btn__zuri`,
+      isExternal: true,
     },
     {
       name: `Zuri Books`,
@@ -56,11 +59,24 @@ function App() {
       id: `book__design`,
       title: 'Start your design Journey with Zuri Design books...FREE!',
     },
+    {
+      name: `Contact`,
+      link: '/contact',
+      id: `contact`,
+      title: 'Start your design Journey with Zuri Design books...FREE!',
+      isExternal: false,
+    },
   ]);
 
   const ButtonLinks = btn.map((btn, index) => {
     return (
-      <Link key={index} href={btn.link} isExternal>
+      <Link
+        key={index}
+        as={btn.isExternal ? null : RRouterLink}
+        href={btn.link}
+        to={btn.link}
+        isExternal={btn.isExternal}
+      >
         <Button
           title={btn.title}
           id={btn.id}
@@ -121,7 +137,7 @@ function App() {
         {ButtonLinks}
       </Box>
       <Flex my="5" gap={5}>
-        <Link href="hng9.slack.com" isExternal>
+        <Link href="hng9.slack.com">
           <Image
             title="@Bug"
             id="slack"
@@ -129,7 +145,7 @@ function App() {
             alt="slack"
           />
         </Link>
-        <Link href="https://github.com/kinxlo" isExternal>
+        <Link href="https://github.com/kinxlo">
           <Image
             title="@Kinxlo"
             id="github"
@@ -162,4 +178,4 @@ function App() {
   );
 }
 
-export default App;
+export default Index;
