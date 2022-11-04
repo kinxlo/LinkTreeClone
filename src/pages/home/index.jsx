@@ -90,13 +90,7 @@ function Index() {
   });
 
   return (
-    <Center
-      pos={`relative`}
-      display={`flex`}
-      flexDir={`column`}
-      p="10"
-      className="cc-container"
-    >
+    <Box pos={`relative`} display={`flex`} flexDir={`column`} p="5">
       <Center flexDir={`column`}>
         <Icon
           display={{ md: `none` }}
@@ -135,7 +129,7 @@ function Index() {
       <Box mt="56px" w={`1oo%`}>
         {ButtonLinks}
       </Box>
-      <Flex my="5" gap={5}>
+      <Flex my="5" gap={5} justifyContent={`center`}>
         <Link href="hng9.slack.com">
           <Image
             title="@Bug"
@@ -153,27 +147,7 @@ function Index() {
           />
         </Link>
       </Flex>
-      <Box mt="10rem" w="100%" borderTop={`1px solid lightgrey`} py="10">
-        <Flex
-          gap={{ base: 5, md: `initial` }}
-          flexDir={{ base: `column`, md: `row` }}
-          alignItems={{ md: `center` }}
-          justifyContent={`space-between`}
-        >
-          <Image
-            w={`10rem`}
-            src="https://res.cloudinary.com/kingsleysolomon/image/upload/v1666874529/hng/Zuri.Internship_Logo_gszpnt.png"
-            alt="github"
-          />
-          <Text color={`grey`}>HNG Internship 9 Frontend Task</Text>
-          <Image
-            w={`10rem`}
-            src="https://res.cloudinary.com/kingsleysolomon/image/upload/v1666874533/hng/I4G_abnqbn.png"
-            alt="IN4G"
-          />
-        </Flex>
-      </Box>
-    </Center>
+    </Box>
   );
 }
 
