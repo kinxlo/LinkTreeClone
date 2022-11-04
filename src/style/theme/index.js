@@ -2,40 +2,34 @@
 import { extendTheme } from '@chakra-ui/react';
 
 const theme = extendTheme({
-  styles: {
-    global: {
-      // body: {
-      //   bg: '#F6F7FB',
-      //   color: 'black',
-      // },
-      // p: {
-      //   letterSpacing: '0.02rem',
-      // },
-      // span: {
-      //   letterSpacing: '0.02rem',
-      // },
-    },
-  },
-
-  colors: {
-    transparent: 'transparent',
-    black: '#292929',
-    white: '#FDFEFF',
-    accent: '#a37bfd',
-    sidenavBg: '#1E1E2D',
-    lightBlue: '#85ACBF',
-    lightGrey: '#757575',
-    yellow: '#E5BF5E',
-    green: '#41D750',
-    blue: '#6397E5',
-    red: '#F42A2A',
-  },
   breakpoints: {
     sm: '30em', //320px
     md: '48em', //768px
     lg: '62em', //960px
     xl: '80em', //1200px
     '2xl': '96em', //1536px 4K viewport
+  },
+  components: {
+    Checkbox: {
+      baseStyle: {
+        icon: {
+          color: '#1570EF',
+        },
+        control: {
+          border: '2px solid black',
+          borderColor: 'gray.300',
+          borderRadius: 'base',
+          _disabled: {
+            borderColor: 'gray.300',
+            bg: 'gray.200',
+          },
+        },
+        label: {
+          fontWeight: 'medium',
+          color: 'gray.900',
+        },
+      },
+    },
   },
   fonts: {
     body: 'Open Sans, sans-serif',
