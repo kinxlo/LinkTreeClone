@@ -21,41 +21,66 @@ const index = ({ name }) => {
       p="10"
       className="cc-container"
     >
-      <Box>
-        <Heading>Contact Me</Heading>
-        <Text>
+      <Box my={12}>
+        <Heading my={5} fontSize={`4xl`}>
+          Contact Me
+        </Heading>
+        <Text fontSize={`xl`}>
           Hi there, contact me to ask me about anything you have in mind.
         </Text>
       </Box>
       <FormControl isRequired as={`form`}>
-        <SimpleGrid columns={2} gap={5}>
+        <SimpleGrid columns={{ md: 2 }} gap={6} my={6}>
           <Box>
-            <FormLabel>First name</FormLabel>
-            <Input size={`lg`} placeholder="Enter your first name" />
+            <FormLabel fontSize={`sm`}>First name</FormLabel>
+            <Input
+              type={`text`}
+              fontSize={`md`}
+              size={`lg`}
+              placeholder="Enter your first name"
+            />
           </Box>
           <Box>
-            <FormLabel>Last name</FormLabel>
-            <Input size={`lg`} placeholder="Enter your last name" />
+            <FormLabel fontSize={`sm`}>Last name</FormLabel>
+            <Input
+              type={`text`}
+              fontSize={`md`}
+              size={`lg`}
+              placeholder="Enter your last name"
+            />
           </Box>
         </SimpleGrid>
-        <SimpleGrid columns={1}>
+        <SimpleGrid columns={1} gap={6}>
           <Box>
-            <FormLabel>Email</FormLabel>
-            <Input type="email" size={`lg`} placeholder="yourname@email.com" />
+            <FormLabel fontSize={`sm`}>Email</FormLabel>
+            <Input
+              fontSize={`md`}
+              type="email"
+              size={`lg`}
+              placeholder="yourname@email.com"
+            />
           </Box>
           <Box>
-            <FormLabel>Message</FormLabel>
+            <FormLabel fontSize={`sm`}>Message</FormLabel>
             <Textarea
+              fontSize={`md`}
               size={`lg`}
               placeholder="Send me a message and I'll reply you as soon as possible..."
             />
           </Box>
           <Box>
-            <Checkbox defaultChecked>
+            <Checkbox size={`lg`} defaultValue>
               You agree to providing your data to {name} who may contact you.
             </Checkbox>
           </Box>
-          <Button type="submit" color={`white`} bgColor={`#1570EF`}>
+          <Button
+            my={8}
+            size={`lg`}
+            fontSize={`md`}
+            type="submit"
+            color={`white`}
+            bgColor={`#1570EF`}
+          >
             Send message
           </Button>
         </SimpleGrid>
