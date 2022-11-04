@@ -10,7 +10,6 @@ import {
   Link,
   Icon,
 } from '@chakra-ui/react';
-// import './index.css';
 import { RiShareForwardLine } from 'react-icons/ri';
 import { AiOutlineEllipsis } from 'react-icons/ai';
 import { Link as RRouterLink } from 'react-router-dom';
