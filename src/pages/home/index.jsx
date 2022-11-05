@@ -9,6 +9,7 @@ import {
   Image,
   Link,
   Icon,
+  Container,
 } from '@chakra-ui/react';
 import { RiShareForwardLine } from 'react-icons/ri';
 import { AiOutlineEllipsis } from 'react-icons/ai';
@@ -90,7 +91,14 @@ function Index() {
   });
 
   return (
-    <Box pos={`relative`} display={`flex`} flexDir={`column`} p="5">
+    <Container
+      maxW={`992px`}
+      pos={`relative`}
+      display={`flex`}
+      flexDir={`column`}
+      p="5"
+      mt={16}
+    >
       <Center flexDir={`column`}>
         <Icon
           display={{ md: `none` }}
@@ -147,7 +155,7 @@ function Index() {
           />
         </Link>
       </Flex>
-    </Box>
+    </Container>
   );
 }
 
