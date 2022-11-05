@@ -61,7 +61,7 @@ function Index() {
     },
     {
       name: `Contact`,
-      link: '/contact',
+      link: `/contact`,
       id: `contact`,
       title: 'Start your design Journey with Zuri Design books...FREE!',
       isExternal: false,
@@ -75,6 +75,7 @@ function Index() {
         as={btn.isExternal ? null : RRouterLink}
         href={btn.link}
         to={btn.link}
+        state={user}
         isExternal={btn.isExternal}
       >
         <Button

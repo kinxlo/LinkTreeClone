@@ -38,15 +38,14 @@ const ContactForm = ({ name }) => {
   ]);
 
   const [input, setInput] = useState({
-    first_name: null,
-    last_name: null,
-    email: null,
-    message: null,
+    first_name: '',
+    last_name: '',
+    email: '',
+    message: '',
     checkbox: false,
   });
 
   const handleInputChange = e => {
-    console.log(e.target.id);
     setInput(prevInput => {
       handleError(e);
       return e.target.id === `checkbox`
@@ -87,6 +86,7 @@ const ContactForm = ({ name }) => {
   const handleForm = e => {
     e.preventDefault();
     console.log(input);
+    // handle form clear
   };
 
   return (

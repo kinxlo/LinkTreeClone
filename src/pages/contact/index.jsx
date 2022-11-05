@@ -1,13 +1,14 @@
 import { Box, Container, Heading, Text } from '@chakra-ui/react';
 import React from 'react';
 import ContactForm from '../../components/ContactForm';
+import { useLocation } from 'react-router-dom';
 
-const index = () => {
+const Index = () => {
+  let { state } = useLocation();
   return (
     <Container
       display={`flex`}
       flexDir={`column`}
-      //   p="10"
       mt={{ base: 16, md: 36 }}
       className="cc-container"
     >
@@ -20,10 +21,10 @@ const index = () => {
             Hi there, contact me to ask me about anything you have in mind.
           </Text>
         </Box>
-        <ContactForm />
+        <ContactForm name={state.name} />
       </Container>
     </Container>
   );
 };
 
-export default index;
+export default Index;
