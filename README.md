@@ -1,6 +1,6 @@
 # Link Tree Clone.
 
-#### [Demo](https://hnglinktreeclone.netlify.app)
+#### [Demo](https://rad-empanada-70020f.netlify.app)
 
 ## Table of Contents
 
