@@ -175,7 +175,7 @@ function Index() {
           id={`twitter`}
           isExternal={`76px`}
           style={style}
-          _hover={{ bgColor: `#EAECF090` }}
+          _hover={{ bgColor: `#EAECF090 !` }}
         >
           @Kinxlo
         </Link>
@@ -185,7 +185,7 @@ function Index() {
           isExternal
           id={`btn__zuri`}
           style={style}
-          _hover={{ bgColor: `#EAECF050` }}
+          _hover={{ bgColor: `#EAECF090 !` }}
         >
           Zuri Team
         </Link>
@@ -195,7 +195,7 @@ function Index() {
           isExternal
           id={`books`}
           style={style}
-          _hover={{ bgColor: `#EAECF090` }}
+          _hover={{ bgColor: `#EAECF090 !` }}
         >
           Zuri Books
         </Link>
@@ -205,7 +205,7 @@ function Index() {
           isExternal
           id={`book__python`}
           style={style}
-          _hover={{ bgColor: `#EAECF090` }}
+          _hover={{ bgColor: `#EAECF090 !` }}
         >
           Python Books
         </Link>
@@ -215,7 +215,7 @@ function Index() {
           isExternal
           id={`pitch`}
           style={style}
-          _hover={{ bgColor: `#EAECF090` }}
+          _hover={{ bgColor: `#EAECF090 !` }}
         >
           Background Check for Coders
         </Link>
@@ -225,7 +225,7 @@ function Index() {
           isExternal
           id={`book__design`}
           style={style}
-          _hover={{ bgColor: `#EAECF090` }}
+          _hover={{ bgColor: `#EAECF090 !` }}
         >
           Design Books
         </Link>
@@ -236,7 +236,7 @@ function Index() {
           state={user}
           id={`contact`}
           style={style}
-          _hover={{ bgColor: `#EAECF090` }}
+          _hover={{ bgColor: `#EAECF090 !` }}
         >
           Contact
         </Link>
