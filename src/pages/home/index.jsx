@@ -77,14 +77,9 @@ function Index() {
         to={btn.link}
         state={user}
         isExternal={btn.isExternal}
+        id={btn.id}
       >
-        <Button
-          title={btn.title}
-          id={btn.id}
-          h={`76px`}
-          mb="15px"
-          width={`100%`}
-        >
+        <Button title={btn.title} h={`76px`} mb="15px" width={`100%`}>
           {btn.name}
         </Button>
       </Link>

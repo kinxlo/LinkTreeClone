@@ -73,7 +73,7 @@ const ContactForm = ({ name }) => {
   // };
 
   // useEffect(() => {
-  //   for (const prop in input) {
+  //   htmlFor (const prop in input) {
   //     if (prop === `checkbox`) continue;
   //     if (!input[prop]) {
   //       setinValid(true);
@@ -93,7 +93,7 @@ const ContactForm = ({ name }) => {
     <FormControl onSubmit={handleForm} as={`form`}>
       <SimpleGrid columns={{ md: 2 }} gap={6} my={6}>
         <FormControl>
-          <FormLabel for="first_name" fontSize={`sm`}>
+          <FormLabel htmlFor="first_name" fontSize={`sm`}>
             First name
           </FormLabel>
           <Input
@@ -108,7 +108,7 @@ const ContactForm = ({ name }) => {
           {/* <FormErrorMessage>{`First name ${errors[0].errorMessage}`}</FormErrorMessage> */}
         </FormControl>
         <FormControl>
-          <FormLabel for="last_name"fontSize={`sm`}>
+          <FormLabel htmlFor="last_name"fontSize={`sm`}>
             Last name
           </FormLabel>
           <Input
@@ -125,7 +125,7 @@ const ContactForm = ({ name }) => {
       </SimpleGrid>
       <SimpleGrid>
         <FormControl>
-          <FormLabel for="email"  fontSize={`sm`}>
+          <FormLabel htmlFor="email"  fontSize={`sm`}>
             Email
           </FormLabel>
           <Input
@@ -140,7 +140,7 @@ const ContactForm = ({ name }) => {
           {/* <FormErrorMessage></FormErrorMessage> */}
         </FormControl>
         <FormControl my={5}>
-          <FormLabel for="message" fontSize={`sm`}>
+          <FormLabel htmlFor="message" fontSize={`sm`}>
             Message
           </FormLabel>
           <Textarea
