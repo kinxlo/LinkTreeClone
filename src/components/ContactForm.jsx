@@ -93,7 +93,9 @@ const ContactForm = ({ name }) => {
     <FormControl onSubmit={handleForm} as={`form`}>
       <SimpleGrid columns={{ md: 2 }} gap={6} my={6}>
         <FormControl isInvalid={errors[0].error}>
-          <FormLabel fontSize={`sm`}>First name</FormLabel>
+          <FormLabel id="first_name" fontSize={`sm`}>
+            First name
+          </FormLabel>
           <Input
             onChange={handleInputChange}
             id="first_name"
@@ -106,10 +108,12 @@ const ContactForm = ({ name }) => {
           <FormErrorMessage>{`First name ${errors[0].errorMessage}`}</FormErrorMessage>
         </FormControl>
         <FormControl isInvalid={errors[1].error}>
-          <FormLabel fontSize={`sm`}>Last name</FormLabel>
+          <FormLabel id="first_name" fontSize={`sm`}>
+            Last name
+          </FormLabel>
           <Input
             onChange={handleInputChange}
-            id="last_name"
+            id="first_name"
             borderRadius={8}
             type={`text`}
             fontSize={`md`}
@@ -121,7 +125,9 @@ const ContactForm = ({ name }) => {
       </SimpleGrid>
       <SimpleGrid columns={1} gap={6}>
         <FormControl isInvalid={errors[2].error}>
-          <FormLabel fontSize={`sm`}>Email</FormLabel>
+          <FormLabel id="email" fontSize={`sm`}>
+            Email
+          </FormLabel>
           <Input
             onChange={handleInputChange}
             id="email"
@@ -134,7 +140,9 @@ const ContactForm = ({ name }) => {
           <FormErrorMessage>{`Email ${errors[2].errorMessage}`}</FormErrorMessage>
         </FormControl>
         <FormControl isInvalid={errors[3].error}>
-          <FormLabel fontSize={`sm`}>Message</FormLabel>
+          <FormLabel id="message" fontSize={`sm`}>
+            Message
+          </FormLabel>
           <Textarea
             onChange={handleInputChange}
             id="message"
