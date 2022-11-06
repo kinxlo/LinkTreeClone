@@ -23,6 +23,10 @@ const theme = extendTheme({
             borderColor: 'gray.300',
             bg: 'gray.200',
           },
+          _hover: {
+            border: `1px solid #84CAFF`,
+            boxShadow: `0px 0px 0px 4px #D1E9FF`,
+          },
         },
         label: {
           fontWeight: 'medium',

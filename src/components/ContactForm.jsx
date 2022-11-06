@@ -104,11 +104,15 @@ const ContactForm = ({ name }) => {
             fontSize={`md`}
             size={`lg`}
             placeholder="Enter your first name"
+            _hover={{
+              border: `1px solid #84CAFF`,
+              boxShadow: `0px 0px 0px 4px #D1E9FF`,
+            }}
           />
           {/* <FormErrorMessage>{`First name ${errors[0].errorMessage}`}</FormErrorMessage> */}
         </FormControl>
         <FormControl>
-          <FormLabel htmlFor="last_name"fontSize={`sm`}>
+          <FormLabel htmlFor="last_name" fontSize={`sm`}>
             Last name
           </FormLabel>
           <Input
@@ -119,13 +123,17 @@ const ContactForm = ({ name }) => {
             fontSize={`md`}
             size={`lg`}
             placeholder="Enter your last name"
+            _hover={{
+              border: `1px solid #84CAFF`,
+              boxShadow: `0px 0px 0px 4px #D1E9FF`,
+            }}
           />
           {/* <FormErrorMessage></FormErrorMessage> */}
         </FormControl>
       </SimpleGrid>
       <SimpleGrid>
         <FormControl>
-          <FormLabel htmlFor="email"  fontSize={`sm`}>
+          <FormLabel htmlFor="email" fontSize={`sm`}>
             Email
           </FormLabel>
           <Input
@@ -136,6 +144,10 @@ const ContactForm = ({ name }) => {
             type="email"
             size={`lg`}
             placeholder="yourname@email.com"
+            _hover={{
+              border: `1px solid #84CAFF`,
+              boxShadow: `0px 0px 0px 4px #D1E9FF`,
+            }}
           />
           {/* <FormErrorMessage></FormErrorMessage> */}
         </FormControl>
@@ -151,6 +163,10 @@ const ContactForm = ({ name }) => {
             fontSize={`md`}
             size={`lg`}
             placeholder="Send me a message and I'll reply you as soon as possible..."
+            _hover={{
+              border: `1px solid #84CAFF`,
+              boxShadow: `0px 0px 0px 4px #D1E9FF`,
+            }}
           />
           <FormErrorMessage></FormErrorMessage>
         </FormControl>
@@ -177,7 +193,10 @@ const ContactForm = ({ name }) => {
           type="submit"
           color={`white`}
           bgColor={`#1570EF`}
-          _hover={{ background: `#175CD3` }}
+          _hover={{
+            border: `1px solid #84CAFF`,
+            boxShadow: `0px 0px 0px 4px #D1E9FF`,
+          }}
         >
           Send message
         </Button>
