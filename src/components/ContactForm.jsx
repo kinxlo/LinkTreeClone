@@ -8,35 +8,10 @@ import {
   Textarea,
   Checkbox,
   Button,
-  FormErrorMessage,
 } from '@chakra-ui/react';
 import React, { useState } from 'react';
 
 const ContactForm = ({ name }) => {
-  // const [inValid, setinValid] = useState(true);
-  // const [errors] = useState([
-  //   {
-  //     name: `first_name`,
-  //     error: false,
-  //     errorMessage: ``,
-  //   },
-  //   {
-  //     name: `last_name`,
-  //     error: false,
-  //     errorMessage: ``,
-  //   },
-  //   {
-  //     name: `email`,
-  //     error: false,
-  //     errorMessage: ``,
-  //   },
-  //   {
-  //     name: `message`,
-  //     error: false,
-  //     errorMessage: ``,
-  //   },
-  // ]);
-
   const [input, setInput] = useState({
     first_name: '',
     last_name: '',
@@ -53,35 +28,6 @@ const ContactForm = ({ name }) => {
         : { ...prevInput, [e.target.id]: e.target.value };
     });
   };
-
-  // const handleError = input => {
-  //   if (input.target.value === '') {
-  //     errors.forEach(err => {
-  //       if (err.name === input.target.id) {
-  //         err.error = true;
-  //         err.errorMessage = `is required`;
-  //       }
-  //     });
-  //   } else {
-  //     errors.forEach(err => {
-  //       if (err.name === input.target.id) {
-  //         err.error = false;
-  //         err.errorMessage = ``;
-  //       }
-  //     });
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   htmlFor (const prop in input) {
-  //     if (prop === `checkbox`) continue;
-  //     if (!input[prop]) {
-  //       setinValid(true);
-  //     } else {
-  //       setinValid(false);
-  //     }
-  //   }
-  // }, [input]);
 
   const handleForm = e => {
     e.preventDefault();
@@ -109,7 +55,6 @@ const ContactForm = ({ name }) => {
               boxShadow: `0px 0px 0px 4px #D1E9FF`,
             }}
           />
-          {/* <FormErrorMessage>{`First name ${errors[0].errorMessage}`}</FormErrorMessage> */}
         </FormControl>
         <FormControl>
           <FormLabel htmlFor="last_name" fontSize={`sm`}>
@@ -128,7 +73,6 @@ const ContactForm = ({ name }) => {
               boxShadow: `0px 0px 0px 4px #D1E9FF`,
             }}
           />
-          {/* <FormErrorMessage></FormErrorMessage> */}
         </FormControl>
       </SimpleGrid>
       <SimpleGrid>
@@ -149,7 +93,6 @@ const ContactForm = ({ name }) => {
               boxShadow: `0px 0px 0px 4px #D1E9FF`,
             }}
           />
-          {/* <FormErrorMessage></FormErrorMessage> */}
         </FormControl>
         <FormControl my={5}>
           <FormLabel htmlFor="message" fontSize={`sm`}>
@@ -168,7 +111,6 @@ const ContactForm = ({ name }) => {
               boxShadow: `0px 0px 0px 4px #D1E9FF`,
             }}
           />
-          <FormErrorMessage></FormErrorMessage>
         </FormControl>
         <Box>
           <Checkbox

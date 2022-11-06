@@ -105,6 +105,19 @@ function Index() {
   //     fontWeight: 500,
   //   };
 
+  const style = {
+    backgroundColor: `#EAECF0`,
+    height: '76px',
+    marginBottom: '15px',
+    width: '100%',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: 12,
+    bgColor: '#EAECF0',
+    fontWeight: 500,
+  };
+
   return (
     <Container
       maxW={`992px`}
@@ -154,22 +167,14 @@ function Index() {
           @Bug
         </Text>
       </Center>
+
       <Box mt="56px" w={`1oo%`}>
         {/* {ButtonLinks} */}
         <Link
           href={`https://twitter.com/kinxlo`}
-          state={user}
           id={`twitter`}
           isExternal={`76px`}
-          h={`76px`}
-          mb="15px"
-          width={`100%`}
-          display={`flex`}
-          alignItems={`center`}
-          justifyContent={`center`}
-          borderRadius={12}
-          bgColor={`#EAECF0`}
-          fontWeight={500}
+          style={style}
           _hover={{ bgColor: `#EAECF090` }}
         >
           @Kinxlo
@@ -177,37 +182,19 @@ function Index() {
         <Link
           title="Start your design Journey with Zuri Design books...FREE!"
           href={`https://training.zuri.team/`}
-          state={user}
           isExternal
           id={`btn__zuri`}
-          h={`76px`}
-          mb="15px"
-          width={`100%`}
-          display={`flex`}
-          alignItems={`center`}
-          justifyContent={`center`}
-          borderRadius={12}
-          bgColor={`#EAECF0`}
-          fontWeight={500}
-          _hover={{ bgColor: `#EAECF090` }}
+          style={style}
+          _hover={{ bgColor: `#EAECF050` }}
         >
           Zuri Team
         </Link>
         <Link
           title="Zuri Books!... My one stop shop for Designers and Programmers"
           href={`https://books.zuri.team/`}
-          state={user}
           isExternal
           id={`books`}
-          h={`76px`}
-          mb="15px"
-          width={`100%`}
-          display={`flex`}
-          alignItems={`center`}
-          justifyContent={`center`}
-          borderRadius={12}
-          bgColor={`#EAECF0`}
-          fontWeight={500}
+          style={style}
           _hover={{ bgColor: `#EAECF090` }}
         >
           Zuri Books
@@ -215,18 +202,9 @@ function Index() {
         <Link
           title="The only Python Book you will ever need! save up to a wooping $10.00 !"
           href={`https://books.zuri.team/python-for-beginners?ref_id=Bug/`}
-          state={user}
           isExternal
           id={`book__python`}
-          h={`76px`}
-          mb="15px"
-          width={`100%`}
-          display={`flex`}
-          alignItems={`center`}
-          justifyContent={`center`}
-          borderRadius={12}
-          bgColor={`#EAECF0`}
-          fontWeight={500}
+          style={style}
           _hover={{ bgColor: `#EAECF090` }}
         >
           Python Books
@@ -234,18 +212,9 @@ function Index() {
         <Link
           title="Learn about your Devs, you know what they do, \n now you can know who they are. \n Allow us to assist you in making more informed hiring selections."
           href={`https://backgroundcheck.zuri.team`}
-          state={user}
           isExternal
           id={`pitch`}
-          h={`76px`}
-          mb="15px"
-          width={`100%`}
-          display={`flex`}
-          alignItems={`center`}
-          justifyContent={`center`}
-          borderRadius={12}
-          bgColor={`#EAECF0`}
-          fontWeight={500}
+          style={style}
           _hover={{ bgColor: `#EAECF090` }}
         >
           Background Check for Coders
@@ -253,18 +222,9 @@ function Index() {
         <Link
           title="Start your design Journey with Zuri Design books...FREE!"
           href={`https://books.zuri.team/design-rules`}
-          state={user}
           isExternal
           id={`book__design`}
-          h={`76px`}
-          mb="15px"
-          width={`100%`}
-          display={`flex`}
-          alignItems={`center`}
-          justifyContent={`center`}
-          borderRadius={12}
-          bgColor={`#EAECF0`}
-          fontWeight={500}
+          style={style}
           _hover={{ bgColor: `#EAECF090` }}
         >
           Design Books
@@ -275,15 +235,7 @@ function Index() {
           to={`/contact`}
           state={user}
           id={`contact`}
-          h={`76px`}
-          mb="15px"
-          width={`100%`}
-          display={`flex`}
-          alignItems={`center`}
-          justifyContent={`center`}
-          borderRadius={12}
-          bgColor={`#EAECF0`}
-          fontWeight={500}
+          style={style}
           _hover={{ bgColor: `#EAECF090` }}
         >
           Contact
