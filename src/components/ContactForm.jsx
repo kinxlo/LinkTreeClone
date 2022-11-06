@@ -93,7 +93,7 @@ const ContactForm = ({ name }) => {
     <FormControl onSubmit={handleForm} as={`form`}>
       <SimpleGrid columns={{ md: 2 }} gap={6} my={6}>
         <FormControl>
-          <FormLabel for="first_name" fontSize={`sm`}>
+          <FormLabel for="first_name" id="first_name" fontSize={`sm`}>
             First name
           </FormLabel>
           <Input
@@ -108,12 +108,12 @@ const ContactForm = ({ name }) => {
           {/* <FormErrorMessage>{`First name ${errors[0].errorMessage}`}</FormErrorMessage> */}
         </FormControl>
         <FormControl>
-          <FormLabel for="last_name" fontSize={`sm`}>
+          <FormLabel for="last_name" id="last_name" fontSize={`sm`}>
             Last name
           </FormLabel>
           <Input
             onChange={handleInputChange}
-            id="first_name"
+            id="last_name"
             borderRadius={8}
             type={`text`}
             fontSize={`md`}
@@ -125,7 +125,7 @@ const ContactForm = ({ name }) => {
       </SimpleGrid>
       <SimpleGrid>
         <FormControl>
-          <FormLabel for="email" fontSize={`sm`}>
+          <FormLabel for="email" id="email" fontSize={`sm`}>
             Email
           </FormLabel>
           <Input
@@ -140,7 +140,7 @@ const ContactForm = ({ name }) => {
           {/* <FormErrorMessage></FormErrorMessage> */}
         </FormControl>
         <FormControl my={5}>
-          <FormLabel for="message" fontSize={`sm`}>
+          <FormLabel for="message" id="message" fontSize={`sm`}>
             Message
           </FormLabel>
           <Textarea
