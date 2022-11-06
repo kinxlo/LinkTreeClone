@@ -85,7 +85,6 @@ const ContactForm = ({ name }) => {
 
   const handleForm = e => {
     e.preventDefault();
-    console.log(input);
     // handle form clear
   };
 
