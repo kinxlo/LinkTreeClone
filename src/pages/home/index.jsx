@@ -195,7 +195,7 @@ function Index() {
         </Link>
         <Link
           title="Zuri Books!... My one stop shop for Designers and Programmers"
-          href={`https://books.zuri.team`}
+          href={`https://books.zuri.team/`}
           state={user}
           isExternal
           id={`books`}
@@ -214,7 +214,7 @@ function Index() {
         </Link>
         <Link
           title="The only Python Book you will ever need! save up to a wooping $10.00 !"
-          href={`https://books.zuri.team/python-for-beginners?ref_id=Bug`}
+          href={`https://books.zuri.team/python-for-beginners?ref_id=Bug/`}
           state={user}
           isExternal
           id={`book__python`}
